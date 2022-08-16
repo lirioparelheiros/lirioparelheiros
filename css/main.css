@@ -1,0 +1,148 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bg-primary);
+  scroll-behavior: smooth;
+  --bg-primary: #000000;
+  --bg-btn: #2c2c2c;
+  --bg-border-avatar: #FFFFFF;
+  --text-dark: #ffffff;
+  --bg-btn-hover: #353434;
+}
+
+/* .dark {
+  --bg-primary: #000000;
+  --bg-btn: #2c2c2c;
+  --bg-border-avatar: #FFFFFF;
+  --text-dark: #ffffff;
+  --bg-btn-hover: #353434;
+} */
+
+.light {
+  --bg-primary: #ffffff;
+  --bg-btn: #FF9E0F;
+  --bg-border-avatar: #FF9E0F;
+  --text-dark: #000000;
+  --bg-btn-hover: #e69010;
+}
+
+.toggleTheme {
+  background-color: transparent;
+  color: var(--text-dark);
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggleTheme:hover {
+  opacity: 0.8;
+}
+
+.container {
+  text-align: center;
+  width: 450px;
+  margin: 25px auto;
+  padding: 8px 40px;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  padding: 4px;
+  border: 4px solid var(--bg-border-avatar);
+}
+
+.title {
+  color: var(--text-dark);
+  font-size: 1.5em;
+  margin: 20px 0 8px;
+}
+
+.username {
+  color: var(--text-dark);
+  font-weight: 400;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.list {
+  margin: 48px 0;
+}
+
+.list .list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  height: 53px;
+  background-color: var(--bg-btn);
+  color: var(--text-dark);
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.list-item-content:hover {
+  background-color: var(--bg-btn-hover);
+}
+
+.content-footer {
+  font-weight: 800;
+  font-size: 12px;
+  opacity: 0.9;
+  color: var(--text-dark);
+}
+
+.btn-topo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background: var(--bg-btn);
+  color: var(--text-dark);
+  transition: all 0.2s linear;
+}
+
+.btn-topo:hover {
+  transform: scale(1.1);
+}
+
+.btn-topo i {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 300px;
+  }
+
+  .btn-topo {
+    height: 35px;
+    width: 35px;
+  }
+
+  .btn-topo i {
+    height: 35px;
+    font-size: medium;
+  }
+}
