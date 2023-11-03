@@ -13,3 +13,14 @@ toggle.addEventListener("click", () => {
     window.localStorage.setItem("theme", "dark");
   }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Obtém o elemento span pelo id "current-year"
+  const currentYearElement = document.getElementById("current-year");
+
+  // Obtém o ano atual
+  const currentYear = new Date().getFullYear();
+
+  // Define o conteúdo do span como o ano atual
+  currentYearElement.textContent = currentYear;
+});
